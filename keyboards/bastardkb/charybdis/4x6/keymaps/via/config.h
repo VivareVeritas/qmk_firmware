@@ -24,6 +24,7 @@
 /* Disable unused features. */
 #define NO_ACTION_ONESHOT
 
+
 /* Charybdis-specific features. */
 
 #ifdef POINTING_DEVICE_ENABLE

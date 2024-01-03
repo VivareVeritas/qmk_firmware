@@ -19,7 +19,12 @@
 /*Vivare Changes*/
 #define TAPPING_TERM 170
 // !BAD >> #define HOLD_ON_OTHER_KEY_PRESS
-//#define PERMISSIVE_HOLD
+#define PERMISSIVE_HOLD
+
+
+/* Trackball angle adjustment. */
+#undef ROTATIONAL_TRANSFORM_ANGLE
+#define ROTATIONAL_TRANSFORM_ANGLE -90
 
 #ifdef VIA_ENABLE
 /* VIA configuration. */
@@ -28,6 +33,14 @@
 
 /* Disable unused features. */
 #define NO_ACTION_ONESHOT
+#ifndef NO_DEBUG
+#define NO_DEBUG
+#endif // !NO_DEBUG
+#if !defined(NO_PRINT) && !defined(CONSOLE_ENABLE)
+#define NO_PRINT
+#endif // !NO_PRINT
+#define NO_MUSIC_MODE
+//! do not use #define NO_ACTION_TAPPING
 
 /* Charybdis-specific features. */
 
