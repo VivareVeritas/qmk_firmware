@@ -1,8 +1,12 @@
+#enable:
 LTO_ENABLE = yes
 VIA_ENABLE = yes
 VIAL_ENABLE = yes
 NKRO_ENABLE = yes
 POINTING_DEVICE_ENABLE = yes
+SWAP_HANDS_ENABLE = yes
+COMBO_ENABLE = yes
+#disable:
 NO_PRINT = yes
 NO_DEBUG = yes
 RGB_MATRIX_ENABLE=no

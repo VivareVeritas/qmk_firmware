@@ -19,6 +19,11 @@
 /*Vivare Changes*/
 
 /* Disable unused features. */
+#undef LOCKING_SUPPORT_ENABLE
+#undef LOCKING_RESYNC_ENABLE
+#undef MASTER_RIGHT
+
+#define MASTER_LEFT
 #define NO_ACTION_ONESHOT
 #define NO_MUSIC_MODE
 #define NO_ACTION_TAPPING
@@ -26,5 +31,3 @@
 #define NO_MUSIC_MODE
 #define NO_ACTION_LAYER
 
-#undef LOCKING_SUPPORT_ENABLE
-#undef LOCKING_RESYNC_ENABLE
